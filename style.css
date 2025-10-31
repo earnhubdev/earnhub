@@ -1,34 +1,99 @@
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
   color: #333;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #007acc;
+  color: white;
+  padding: 0.75rem;
   text-align: center;
-  padding: 2rem;
-}
-
-main {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-  color: #007acc;
-  font-size: 2rem;
-}
-
-.tagline {
-  font-style: italic;
-  margin-top: 0.5rem;
-  color: #555;
-}
-
-.note {
-  margin-top: 1.5rem;
   font-size: 0.95rem;
-  color: #666;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin: 1rem 0;
+}
+nav a {
+  margin: 0.4rem;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content container */
+main {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h1, h2 {
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  color: #444;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin: 0.75rem 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header, footer {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  main {
+    padding: 1rem;
+  }
 }
