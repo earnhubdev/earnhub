@@ -32,20 +32,27 @@
 
     <form>
       <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Phone (optional)" />
+      <input type="email" name="email" placeholder="Your Email" required pattern="[^@\\s]+@[^@\\s]+\\.[^@\\s]+" />
 
       <select name="country" required>
         <option value="">Select Your Country</option>
+        <!-- Full country list from HTML generator -->
         <option value="India">India</option>
         <option value="United States">United States</option>
         <option value="United Kingdom">United Kingdom</option>
-        <option value="Canada">Canada</option>
         <option value="Australia">Australia</option>
-        <option value="Singapore">Singapore</option>
+        <option value="Canada">Canada</option>
         <option value="Germany">Germany</option>
         <option value="France">France</option>
+        <option value="Brazil">Brazil</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Japan">Japan</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Mexico">Mexico</option>
         <option value="Other">Other</option>
+        <!-- You can paste full list from [html-code-generator.com](https://www.html-code-generator.com/drop-down/country-names) -->
       </select>
 
       <select name="profession" required>
